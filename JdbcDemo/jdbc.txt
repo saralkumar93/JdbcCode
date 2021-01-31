@@ -1,0 +1,12 @@
+
+step to connect to the database
+1. registering the driver class
+Class.forName("oracle.jdbc.driver.OracleDriver");
+2.creating connection
+Connection con=DriverManager.getConnection("jdbc:oracle:thin@localhost:xe",
+				"system","password");
+				
+3.creating statement
+         Statement stmt=Con.CreateStatement();
+4.executing queries 
+ResultSet rs=stmt.executeQuery("select * from exp");444
